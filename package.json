@@ -4,6 +4,8 @@
   "description": "",
   "main": "js/scripts.js",
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "watch": "gulp watch"
   },
   "keywords": [
@@ -24,5 +26,9 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
     "gulp-wait": "0.0.2"
+  },
+  "homepage": "https://mudu93.github.io/",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
